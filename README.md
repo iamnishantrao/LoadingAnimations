@@ -3,10 +3,9 @@
 An iOS app which shows various types of Loading Animations.
 
 # Screenshots:
-![screenshot1](https://user-images.githubusercontent.com/20210939/29328073-d625f2a6-820e-11e7-8be9-ac0759bec152.gif)
-![screenshot2](https://user-images.githubusercontent.com/20210939/29328075-d627f8d0-820e-11e7-8e45-624c147415d9.gif)
-![screenshot3](https://user-images.githubusercontent.com/20210939/29328074-d626de82-820e-11e7-9e28-4403ff32d02e.gif)
-
+![screenshot2](https://user-images.githubusercontent.com/20210939/29328311-be2a2342-820f-11e7-8a0b-cde223ae464b.gif)
+![screenshot3](https://user-images.githubusercontent.com/20210939/29328312-be2d144e-820f-11e7-9ec4-0691be696f7a.gif)
+![screenshot1](https://user-images.githubusercontent.com/20210939/29328310-be27fad6-820f-11e7-9be6-3289bbcd268f.gif)
 
 # After downloading?
 1. Go to Project directory in Terminal and run "pod install". Make sure that you have CocoaPods installed on your system.
