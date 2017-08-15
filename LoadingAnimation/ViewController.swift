@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var animName = ["Loading", "Loading..", "Material Loader", "Preloader", "Progress Bar", "Trail Loading"]
+    var animName = ["Loading", "Material Loader", "Preloader", "Progress Bar", "Trail Loading"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +21,24 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-
-//    let animationView = LOTAnimationView(name: "loading..")
-//    animationView?.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
-//    animationView?.contentMode = .scaleAspectFit
-//    
-//    self.view.addSubview(animationView!)
-//    
-//    animationView?.play()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "LoadAnimationVC" {
+            
+            if let destination = segue.destination as? LoadAnimationVC {
+                
+                if let name = sender as? String {
+                    
+                    destination.loadAnimation(name: name)
+                }
+            }
+        }
+    }
 
 }
 
+// Extension for Table View.
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,7 +58,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell?.loadAnimNameLabel.text = name
         return cell!
-//        return UITableViewCell()
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -59,5 +66,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return 80.0
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let name = animName[indexPath.row]
+        performSegue(withIdentifier: "LoadAnimationVC", sender: name)
+    }
 }
 

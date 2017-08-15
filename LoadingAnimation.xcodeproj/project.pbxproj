@@ -13,7 +13,7 @@
 		19294C991F43411E004171E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19294C981F43411E004171E8 /* Assets.xcassets */; };
 		19294C9C1F43411E004171E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19294C9A1F43411E004171E8 /* LaunchScreen.storyboard */; };
 		192B0C371F4349300004CE58 /* LoadAnimCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B0C361F4349300004CE58 /* LoadAnimCell.swift */; };
-		19E433B01F43430700F7EF31 /* Loading...json in Resources */ = {isa = PBXBuildFile; fileRef = 19E433AA1F43430700F7EF31 /* Loading...json */; };
+		19C9F74B1F4357CF00F86705 /* LoadAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9F74A1F4357CF00F86705 /* LoadAnimationVC.swift */; };
 		19E433B11F43430700F7EF31 /* Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E433AB1F43430700F7EF31 /* Loading.json */; };
 		19E433B21F43430700F7EF31 /* Material Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E433AC1F43430700F7EF31 /* Material Loader.json */; };
 		19E433B31F43430700F7EF31 /* Preloader.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E433AD1F43430700F7EF31 /* Preloader.json */; };
@@ -31,7 +31,7 @@
 		19294C9B1F43411E004171E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19294C9D1F43411E004171E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		192B0C361F4349300004CE58 /* LoadAnimCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadAnimCell.swift; sourceTree = "<group>"; };
-		19E433AA1F43430700F7EF31 /* Loading...json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading...json; sourceTree = "<group>"; };
+		19C9F74A1F4357CF00F86705 /* LoadAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadAnimationVC.swift; sourceTree = "<group>"; };
 		19E433AB1F43430700F7EF31 /* Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading.json; sourceTree = "<group>"; };
 		19E433AC1F43430700F7EF31 /* Material Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Material Loader.json"; sourceTree = "<group>"; };
 		19E433AD1F43430700F7EF31 /* Preloader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Preloader.json; sourceTree = "<group>"; };
@@ -92,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				19294C931F43411E004171E8 /* ViewController.swift */,
+				19C9F74A1F4357CF00F86705 /* LoadAnimationVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -114,7 +115,6 @@
 		19E433A91F4342D900F7EF31 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				19E433AA1F43430700F7EF31 /* Loading...json */,
 				19E433AB1F43430700F7EF31 /* Loading.json */,
 				19E433AC1F43430700F7EF31 /* Material Loader.json */,
 				19E433AD1F43430700F7EF31 /* Preloader.json */,
@@ -204,7 +204,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E433B01F43430700F7EF31 /* Loading...json in Resources */,
 				19294C9C1F43411E004171E8 /* LaunchScreen.storyboard in Resources */,
 				19E433B41F43430700F7EF31 /* Progress Bar.json in Resources */,
 				19294C991F43411E004171E8 /* Assets.xcassets in Resources */,
@@ -272,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19294C941F43411E004171E8 /* ViewController.swift in Sources */,
+				19C9F74B1F4357CF00F86705 /* LoadAnimationVC.swift in Sources */,
 				19294C921F43411E004171E8 /* AppDelegate.swift in Sources */,
 				192B0C371F4349300004CE58 /* LoadAnimCell.swift in Sources */,
 			);
